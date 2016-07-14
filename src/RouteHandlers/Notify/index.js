@@ -1,0 +1,1 @@
+import React, {Component, PropTypes} from 'react';class NotifyIndex extends Component {  static propTypes = {  };  state = {    sectionTitle: 'Единицы измерения',    sectionLink: 'Создать единицу измерения',    path: '/create'  }  render() {    return (      <div className="client-index">            </div>    )  }}export default NotifyIndex

@@ -1,0 +1,1 @@
+import React, { PropTypes } from 'react'function SectionTitle(props) {  const { text } = props;  return (    <h1 className="section-title">{text}</h1>  )}SectionTitle.propTypes = {  text: PropTypes.string,};export default SectionTitle

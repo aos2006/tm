@@ -1,0 +1,1 @@
+import React, { PropTypes } from 'react'import {Link} from 'react-router'function TableListActions(props) {  const {icon, path, title} = props;  return (  <Link className="table-list__action" to='#' title={title}>    <span className={icon}></span>  </Link>  )}TableListActions.propTypes = {  icon: PropTypes.string};export default TableListActions

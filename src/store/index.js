@@ -1,12 +1,13 @@
-import { createStore, compose, applyMiddleware } from 'redux'
-import reducer from '../reducers'
-import multi from 'redux-multi'
-import thunk from 'redux-thunk'
-import randomId from '../middlewares/randomId'
-import validator from '../middlewares/validator'
+import { createStore, compose, applyMiddleware } from 'redux';
+import reducer from '../reducers';
+import multi from 'redux-multi';
+import thunk from 'redux-thunk';
+import callApi from '../middlewares/callApi';
 
-const isPropduction = process.env.NODE_ENV == "production"
-const commonMiddlewares = [applyMiddleware(multi, thunk, randomId, validator)]
+
+
+const isPropduction = process.env.NODE_ENV == "production";
+const commonMiddlewares = [applyMiddleware(multi, thunk, callApi)]
 const envMiddlewares = isPropduction ? require('./prod').default : require('./dev').default
 
 const enhancer = compose(...commonMiddlewares.concat(envMiddlewares))

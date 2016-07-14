@@ -1,0 +1,1 @@
+import React, { PropTypes } from 'react'function ClientsListHeadItem(props) {  const {text} = props;  return (      <th className="table-list__cell">        <a href="#">{text}</a>      </th>  )}ClientsListHeadItem.propTypes = {};export default ClientsListHeadItem

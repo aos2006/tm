@@ -1,0 +1,1 @@
+export const IS_SHOW = 'IS_SHOW';export const LOAD_DATA_FOR_TABLE_LIST = 'LOAD_DATA_FOR_TABLE_LIST';export const SUCCESS = '_SUCCESS';export const FAIL = '_FAIL';export const START = '_START';export const SORT_TABLE = 'SORT_TABLE';

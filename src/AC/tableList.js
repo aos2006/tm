@@ -1,0 +1,1 @@
+import { LOAD_DATA_FOR_TABLE_LIST, SORT_TABLE } from '../constants'export function getData(callApi) {  return {    type: LOAD_DATA_FOR_TABLE_LIST,    payload: {},    callApi: callApi  }}export function sortTableListItems(options) {  return {    type: SORT_TABLE,    payload: {      fieldType: options.fieldType,      fieldValue: options.fieldValue,    }  }  }

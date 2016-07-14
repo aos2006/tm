@@ -1,0 +1,136 @@
+<p>2.9.0 (04 February, 2016)</p>
+<ul>
+<li>Added &#39;title_format&#39; option</li>
+<li>Added NPM support</li>
+</ul>
+<p>2.8.0 (08 April, 2015)</p>
+<ul>
+<li>Added support for no default date <a href="https://github.com/nazar-pc/PickMeUp/pull/70">#70</a>, thanks to Amar Syla for pull request!</li>
+</ul>
+<p>2.7.0 (31 March, 2015)</p>
+<ul>
+<li>Added UMD support <a href="https://github.com/nazar-pc/PickMeUp/pull/63">#63</a>, thanks to Przemysław Piątek for pull request!</li>
+</ul>
+<p>2.6.5 (24 March, 2015)</p>
+<ul>
+<li>Mobile Safari issue, fixes <a href="https://github.com/nazar-pc/PickMeUp/issues/50">#50</a></li>
+</ul>
+<p>2.6.4 (04 March, 2015)</p>
+<ul>
+<li>Method &#39;set_date&#39; does not update input value, fixes <a href="https://github.com/nazar-pc/PickMeUp/issues/53">#53</a></li>
+<li>Fix for input+range+hide_on_select, fixes <a href="https://github.com/nazar-pc/PickMeUp/issues/56">#56</a></li>
+<li>Fix for disabled dates + bootstrap, fixes <a href="https://github.com/nazar-pc/PickMeUp/issues/59">#59</a></li>
+</ul>
+<p>2.6.3 (21 January, 2015)</p>
+<ul>
+<li>Protect modification of internal date in <code>render</code> event callback.</li>
+<li>Fix for <code>update</code> event on <code>flat: true</code> instances.</li>
+</ul>
+<p>2.6.2 (15 January, 2015)</p>
+<ul>
+<li>Fix for bug when <code>min</code> and <code>max</code> were not specified and forced datepicker to stuck at 1970, fixes <a href="https://github.com/nazar-pc/PickMeUp/issues/49">#49</a></li>
+</ul>
+<p>2.6.1 (13 January, 2015)</p>
+<ul>
+<li>Fix for bug when specified <code>max</code> date in the middle of the month caused inability to switch to that month</li>
+</ul>
+<p>2.6.0 (13 December, 2014)</p>
+<ul>
+<li>New parameter <code>$background-hover</code> added to <code>scss</code> style file</li>
+<li>Fix wrong class on selected months and years (<code>pmu-today</code> instead of <code>pmu-selected</code>)</li>
+<li>New <code>default_date</code> option</li>
+<li>Fix for <code>$background-hover</code> default color</li>
+<li>Fix for resetting interval to 1 date with combination of <code>flat:false</code> and <code>hide_on_select:true</code></li>
+</ul>
+<p>2.5.1 (08 September, 2014)</p>
+<ul>
+<li>Single mode check if options.date is array (take first element of array) <a href="https://github.com/nazar-pc/PickMeUp/pull/35">#35</a></li>
+</ul>
+<p>2.5.0 (23 August, 2014)</p>
+<ul>
+<li>Fix for The month before min date should not display <a href="https://github.com/nazar-pc/PickMeUp/issues/32">#32</a></li>
+<li>events namespacing</li>
+<li>touch support (<code>trigger_event</code> option defaults to <code>click touchstart</code>)</li>
+<li><code>destroy</code> method, fixes <a href="https://github.com/nazar-pc/PickMeUp/issues/30">#30</a></li>
+<li>current date highlighting in range mode</li>
+<li>new option <code>select_day</code> (also <code>select_month</code> no longer depends on <code>select_year</code>), fixes <a href="https://github.com/nazar-pc/PickMeUp/issues/29">#29</a></li>
+<li>account min/max options in months and years views</li>
+<li>huge refactoring and fixes for various found small bugs</li>
+<li>Fix for pmu-{next || prev} clicktarget unreachable with icon, issue <a href="https://github.com/nazar-pc/PickMeUp/issues/33">#33</a></li>
+</ul>
+<p>2.4.3 (05 August, 2014)</p>
+<ul>
+<li>Fix for broken date parsing in last version</li>
+</ul>
+<p>2.4.2 (16 July, 2014)</p>
+<ul>
+<li>More correct fix for NaN instead of dates and months names when wrong data placed in input field</li>
+</ul>
+<p>2.4.1 (11 July, 2014)</p>
+<ul>
+<li>Fix for NaN instead of dates and months names when wrong data placed in input field, fixes <a href="https://github.com/nazar-pc/PickMeUp/issues/26">#26</a> and <a href="https://github.com/nazar-pc/PickMeUp/issues/27">#27</a></li>
+</ul>
+<p>2.4.0 (01 July, 2014)</p>
+<ul>
+<li>Add methods prev/next for external call</li>
+</ul>
+<p>2.3.0 (29 June, 2014)</p>
+<ul>
+<li>new options <code>select_year</code> and <code>select_month</code></li>
+<li>bower config added</li>
+<li>New event <code>fill</code> event added</li>
+<li>New scss parameter for color of selected date</li>
+<li>UIkit integration</li>
+<li>Fix for issue <a href="https://github.com/nazar-pc/PickMeUp/issues/20">#20</a>: Invoking clear in range mode</li>
+<li>Fix for parsing formatted date when using months</li>
+<li>Correct cyrillic and any other symbols support in months names</li>
+<li>Added support of custom format in <code>formatted</code> argument for <code>get_date</code> method</li>
+<li>Twitter Bootstrap integration</li>
+<li>Hide previous/next buttons when necessary if min/max options specified, closes <a href="https://github.com/nazar-pc/PickMeUp/issues/17">#17</a></li>
+</ul>
+<p>2.2.3 (January 18, 2014)</p>
+<ul>
+<li>Fix for issue <a href="https://github.com/nazar-pc/PickMeUp/issues/7">#7</a>: Doesn&#39;t close when focus is lost from input field</li>
+<li>Fix for issue <a href="https://github.com/nazar-pc/PickMeUp/issues/8">#8</a>: NaN is appearing instead of numbers</li>
+</ul>
+<p>2.2.2 (January 11, 2014)</p>
+<ul>
+<li>update, get_date, set_date methods are not working</li>
+</ul>
+<p>2.2.1 (January 08, 2014)</p>
+<ul>
+<li>Fix for issue <a href="https://github.com/nazar-pc/PickMeUp/issues/4">#4</a>): Callbacks only apply to first of original selector</li>
+</ul>
+<p>2.2.0 (January 08, 2014)</p>
+<ul>
+<li>Automatic getting and setting value when applied to input (fixes issue <a href="https://github.com/nazar-pc/PickMeUp/issues/3">#3</a>)</li>
+<li>New <code>separator</code> option.</li>
+</ul>
+<p>2.1.2 (November 29, 2013)</p>
+<ul>
+<li>Positioning fix</li>
+</ul>
+<p>2.1.1 (November 25, 2013)</p>
+<ul>
+<li>Fixed typo</li>
+</ul>
+<p>2.1.0 (November 21, 2013)</p>
+<ul>
+<li>Current day marked with class <code>pmu-today</code> and has its own color settings</li>
+<li>Bad input ignored, today&#39;s date assumed</li>
+<li>Disabled text selection</li>
+<li>Arrows only on first and last calendars</li>
+<li>New <code>min</code> and <code>max</code> options</li>
+<li>New <code>hide_on_select</code> option</li>
+</ul>
+<p>2.0.1 (November 21, 2013)</p>
+<ul>
+<li>Large internal refactoring, hopefully code now is more clear,  consistent and understandable.</li>
+<li><code>this</code> in any callback will be the same element, on which pickmeup() was called (actually, the same for internal functions).</li>
+<li>Current options (for whatever reason) can be accessed as <code>$(&#39;...&#39;).data(&#39;pickmeup-options&#39;)</code>.</li>
+<li>Root pickmeup element (jQuery collection object) can be accessed as <code>$(&#39;...&#39;).get(0).pickmeup</code> or directly <code>this.pickmeup</code> if inside callback.</li>
+</ul>
+<p>1.0.0 (November 16, 2013)</p>
+<ul>
+<li>Initial release</li>
+</ul>

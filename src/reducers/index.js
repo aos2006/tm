@@ -1,10 +1,10 @@
-import { combineReducers } from 'redux'
-import employees from './employees'
-import projects from './projects'
-import notifications from './notifications'
+import { combineReducers } from 'redux';
+import menuReducer from './menu';
+import tableListReducer from './tableList';
+import tableFiltredReducer from './tableFiltred';
 
 export default combineReducers({
-    employees,
-    projects,
-    notifications
+  menu: menuReducer,
+  tableListData: tableListReducer,
+  sortedRowItems: tableFiltredReducer
 })

@@ -1,0 +1,1 @@
+import React, { PropTypes } from 'react'function TableTdItem(props) {  const {item} = props  return (    <td className="table-list__cell">{item}</td>  )}TableTdItem.propTypes = {};export default TableTdItem

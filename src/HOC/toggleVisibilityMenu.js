@@ -1,0 +1,1 @@
+import React, { Component } from 'react'export default function (CustomComponent) {  return class extends Component {        render() {      return <CustomComponent toggleVisibilityMenu={this.toggleVisibilityMenu} {...this.props}      />    }    toggleVisibilityMenu = (ev) => {      ev.preventDefault();      this.props.showMenu(!this.props.isShow)    };      }}

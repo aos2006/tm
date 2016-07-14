@@ -1,0 +1,1 @@
+import React, { PropTypes } from 'react'function HeaderItem(props) {  const { item } = props;  return (    <li className="actions__item">      <i className = {`icon actions__icon ${item.icon}`} onClick={item.handleClick}></i>    </li>  )}HeaderItem.propTypes = {};export default HeaderItem
